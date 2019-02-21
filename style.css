@@ -90,6 +90,10 @@ h1 {
     font-size: 50px;
 }
 
+.about h2 {
+	display: none;
+}
+
 .about	p {
 	font-size: 25px;
    
@@ -427,10 +431,11 @@ a {
 
 	h1 {
     font-size: 20px;
+
 	}
 
 	.about p {
-    font-size: 13px;
+    display: none;
 	}
 
 	.pet-description p {
@@ -440,20 +445,35 @@ a {
 	header p {
 		width: 50%;
 		margin: 2%;
+		font-size: 13px;
 	}
 
-	header{
+	header {
 		height: 50px;
 	}
 
 	header a {
-		padding: 2.3%;
+		padding: 1.3%;
 		width: 40%;
+
 	}
 	    
 	.pet {
 		margin: 3%;
 	}
+
+	.about h2 {
+	display: block;
+	}
+
+	h1 {
+	display: none;
+	}
+ * {
+ 	font-weight: 600;
+ 	text-transform: uppercase;
+ }
+
 }
 
 
