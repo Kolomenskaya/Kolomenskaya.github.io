@@ -419,6 +419,7 @@ a {
 
 
 @media (max-width: 700px) {
+
 	#out {
 	grid-template-columns: repeat(2, 1fr);
 	}
@@ -426,10 +427,30 @@ a {
 	h1 {
     font-size: 20px;
 	}
-	
+
 	.about p {
     font-size: 13px;
 	}
+
+	.pet-description p {
+		display: none;
+	}
+
+	header p {
+		width: 50%;
+		margin: 2%;
+	}
+
+	header{
+		height: 50px;
+	}
+
+	header a {
+		padding: 2.3%;
+		width: 40%;
+	}
+	    
+
 }
 
 
