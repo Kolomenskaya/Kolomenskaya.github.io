@@ -464,6 +464,7 @@ a {
 	.about h2 {
 	display: block;
 	width: 80%;
+	text-transform: uppercase ;
 	}
 
 	h1 {
@@ -472,7 +473,7 @@ a {
 
 	* {
 		font-weight: 600;
-		text-transform: uppercase;
+		
 	}
 
 .about img {
