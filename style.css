@@ -415,6 +415,18 @@ a {
 	.about p {
 		font-size: 15px;
 	}
+
+	#out {
+	grid-template-columns: repeat(2, 1fr);
+	}
+
+	h1 {
+    font-size: 20px;
+	}
+	
+	.about p {
+    font-size: 13px;
+	}
 }
 
 
@@ -426,7 +438,7 @@ a {
 	h1 {
     font-size: 20px;
 	}
-	
+
 	.about p {
     font-size: 13px;
 	}
