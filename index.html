@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
     <title></title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
@@ -22,33 +22,33 @@
 		<p>Ваши 50₽ очень нам помогут! </p> 
 		<a href="https://vk.com/priut_rgevka?w=app5727453_-190703">Стать спонсором</a>
 	</header>
+	<div class="content">
+		<section class="about">
+			<img src="pic/rzhevka3.png">
+			<div class="abouttext">
+				<h1>Привет! Мы - Ржевка</h1>
+				<p> Приют для бездомных животных</p>
+			</div>
+			<div class="aboutbuttons">
+				<a href="" class="needsbutton">Наши нужды</a>
+				<a href="" class="morebutton">О приюте</a>
+			</div>
+		</section>
+		
+		<section class="filter-bar">
+			<button onclick="showAll()">Все</button>
+			<button id="specialButton" onclick="showCats()">Кошки</button>
+			<button onclick="showDogs()" >Собаки</button>
+		</section>
+		
+		<section id="out">
+	    </section>
 
-	<section class="about">
-		<img src="pic/rzhevka3.png">
-		<div class="abouttext">
-			<h1>Привет! Мы - Ржевка</h1>
-			<p> Приют для бездомных животных</p>
-		</div>
-		<div class="aboutbuttons">
-			<a href="" class="needsbutton">Наши нужды</a>
-			<a href="" class="morebutton">О приюте</a>
-		</div>
-	</section>
-	
-	<section class="filter-bar">
-		<button onclick="showAll()">Все</button>
-		<button id="specialButton" onclick="showCats()">Кошки</button>
-		<button onclick="showDogs()" >Собаки</button>
-	</section>
-	
-	<section id="out">
-    </section>
-
-    <section class="more">
-    	<button id="more" onclick="showAll()">Показать остальных</button>
-    <!-- 	<button id="up" onclick="showAll()">Наверх</button> -->
-    </section>
-
+	    <section class="more">
+	    	<button id="more" onclick="showAll()">Показать остальных</button>
+	    <!-- 	<button id="up" onclick="showAll()">Наверх</button> -->
+	    </section>
+	</div>
     <footer>
     	<span> <a href="https://www.instagram.com/_rgevka_priut_/"><i class="fab fa-instagram"></i></a></span>
     	<span><i class="fa fa-envelope" aria-hidden="true"></i></span>

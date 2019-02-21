@@ -30,6 +30,11 @@ button:hover {
 	box-shadow: 0em 0em 20px 4px rgba(122,122,122,0.3);
 }
 
+.content {
+	max-width: 1400px;
+	margin: 3% 10% 0% 10%;
+}
+
 
 /*--------Верхняя полоса стать спонсором---------*/
 header {
@@ -54,12 +59,13 @@ header a {
 	padding: 0.5%;
 	color: white;
 	font-weight: 700;
+	text-align: center;
 }
 
 
 /*--------Заголовок с логотипом---------*/
 .about {
-	margin: 3% 10% 0% 10%;
+	
 	height: 25%;
 	display: flex;
 	flex-wrap: nowrap;
@@ -68,7 +74,6 @@ header a {
 	background: #fff;
     border-radius: 6px;
     box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.05);
-    width: 80%;
 }
 
 .about img {
@@ -137,7 +142,7 @@ h1 {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	margin: 2% 10% 10px 10%;
+	margin: 2% 0% 10px 10%;
 }
 
 #specialButton {
@@ -147,7 +152,6 @@ h1 {
 /*--------Каталог все животные-------*/
 
 #out {
-	margin: 0px 10% 0px 10%;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 3%;
@@ -314,6 +318,41 @@ a {
 	margin-top: 2%;
 }
 
+
+@media (max-width: 1500px) {
+
+	h1 {
+		font-size: 40px;
+	}
+
+	header a {
+		font-size: 14px;
+		width: 12%;
+	}
+}
+
+@media (max-width: 1280px) {
+
+	h1 {
+		font-size: 37px;
+	}
+
+	header a {
+		font-size: 14px;
+		width: 16%;
+	}
+
+	.about p {
+		font-size: 20px;
+	}
+
+	.aboutbuttons a {
+    width: 80%;
+	}
+	.about img {
+    margin: 3% 1%;
+}
+}
 
 
 
