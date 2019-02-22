@@ -516,7 +516,9 @@ a {
 		margin: 0;
 		width: 100%;
 	}
-
+	.morebutton {
+		display: none;
+	}
 }
 
 
