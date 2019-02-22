@@ -434,11 +434,6 @@ a {
 		grid-gap: 1.5%;
 	}
 
-	h1 {
-    	font-size: 20px;
-
-	}
-
 	.about p {
     	display: none;
 
@@ -476,6 +471,9 @@ a {
 		display: block;
 		width: 100%;
 		text-transform: uppercase ;
+		font-size: 1.65em;
+		margin-left: -1%;
+
 	}
 
 	h1 {
@@ -504,6 +502,7 @@ a {
 	.abouttext {
 		grid-column: 3/7;
 		width: 100%;
+		margin-top: 7%;
 	}
 
 	.aboutbuttons {
