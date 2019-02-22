@@ -424,18 +424,24 @@ a {
 
 @media (max-width: 700px) {
 
+	* {
+		font-weight: 700;
+		
+	}
+
 	#out {
-	grid-template-columns: repeat(2, 1fr);
-	grid-gap: 4%;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 1.5%;
 	}
 
 	h1 {
-    font-size: 20px;
+    	font-size: 20px;
 
 	}
 
 	.about p {
-    display: none;
+    	display: none;
+
 	}
 
 	.pet-description p {
@@ -458,27 +464,59 @@ a {
 	}
 	    
 	.pet {
-		margin: 4%;
+		/*margin: 4%;*/
+		border-radius: 0px;
+	}
+
+	.pet img {
+		border-radius: 0px;
 	}
 
 	.about h2 {
-	display: block;
-	width: 80%;
-	text-transform: uppercase ;
+		display: block;
+		width: 100%;
+		text-transform: uppercase ;
 	}
 
 	h1 {
 	display: none;
 	}
 
-	* {
-		font-weight: 700;
-		
+	
+	.about img {
+	 	max-width: 100%; 
+	 	grid-column: 1/3;
 	}
 
-.about img {
-	float: left;
-}
+	.about {
+		border-radius: 0px;
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: repeat(6, 1fr);
+	}
+
+	.filter-bar {
+	    justify-content: center;
+	  
+	    margin: 2% 0%;
+	}
+
+	.abouttext {
+		grid-column: 3/7;
+		width: 100%;
+	}
+
+	.aboutbuttons {
+		width: 100%;
+		grid-column:1/7;
+		display: block;
+	}
+
+	.aboutbuttons a {
+		margin: 0;
+		width: 100%;
+	}
+
 }
 
 
