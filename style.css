@@ -256,9 +256,9 @@ span {
 
 .close {
     position: absolute;
-    right: 45px;
+    right: 25px;
     text-align: center;
-    top: 30px;
+    top: 25px;
     width: 24px;
     text-decoration: none;
     font-size: 25px;
@@ -282,8 +282,8 @@ i:hover {
 
 
 .modalcenter img {
-	width: 35%;	
-	margin: 8% 3% 5% 5%;
+	width: 40%;	
+	margin: 8% 3% 8% 3%;
 	
 }
 
@@ -306,7 +306,7 @@ a {
     margin: 15% 3% 0px 3%;
     padding: 2%;
     transition: 0.4s ease 0s;
-    width: 40%;
+    width: 50%;
 }
 
 .modalbutton:hover {
