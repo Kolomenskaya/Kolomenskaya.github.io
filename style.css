@@ -5,15 +5,13 @@
 	box-sizing: border-box;
 	letter-spacing: 1px;
 	font-weight: 550;
-	display: block;
 	color:#444;
 }
 
 body {
+	display: block;
 	background-color: #ececef;
 	background-image: url(pic/bg01.png);
-/*	display: flex;*/
-	/*align-items: center;*/
 }
 
 .content {
@@ -309,6 +307,7 @@ i:hover {
 
 a {
 	text-decoration: none;
+	display: block;
 }
 
 .modalbutton {
