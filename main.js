@@ -8,7 +8,7 @@ for (var key in pets) {
      out +='<div class="pet-description">';
      out +='<h2>'+pets[key].name+'</h2>';
      out +='<p>'+pets[key].description+'</p>'+'</div>'+'</div>';
-}
+};
 
 document.getElementById('out').innerHTML = out;
 
@@ -16,13 +16,13 @@ var dog = document.getElementsByClassName('dog');
 var cat = document.getElementsByClassName('cat');
 var pet = document.querySelectorAll('.pet');
 var openModal = document.getElementById('openModal');
-
+var content=document.querySelectorAll('.content');
 
 //Показываем только 6 зверей
 
 for (i=0; i<6; i++){
           pet[i].style.display="block";
-      };
+};
 
 
 //Показать всех остальных
@@ -36,7 +36,7 @@ function showAll(){
      for (i=0; i<cat.length; i++){
           cat[i].style.display="block";
      }
-     more.style.display="none";
+     more.style.visibility="hidden";
 };
 
 //Фильтр : только собаки
@@ -57,29 +57,33 @@ function showCats(){
       for (i=0; i<dog.length; i++){
           dog[i].style.display="none";
       }
-      for (i=0; i<cat.length; i++){
+      for (i=0; i<cat.length; i++){ 
           cat[i].style.display="block";
       }
 };
 
-
 //Модальное окно
 
 
+
 for (i=0; i<pet.length; i++){
-         pet[i].onclick=function(){
-         var wow = this.getAttribute('art');
+      pet[i].onclick=function(){
+          var id = this.getAttribute('art');
+          openModal.style.display="block";
+          var modal = '';
+          modal ='<img src="'+pets[id].image+'">';
+          modal +='<div class="modal-des"> <h2>'+pets[id].name+', '+pets[id].age+'</h2>';
+          modal +='<p>'+pets[id].description+'</p>';
+          modal +='<button class="modalbutton">Забрать домой</button>'+'</div>';
+          document.getElementById('modal').innerHTML = modal;
 
-         openModal.style.display="block";
-         var modal = '';
-         modal ='<img src="'+pets[wow].image+'">';
-         modal +='<div class="modal-des"> <h2>'+pets[wow].name+', '+pets[wow].age+'</h2>';
-         modal +='<p>'+pets[wow].description+'</p>';
-         modal +='<button class="modalbutton">Забрать домой</button>'+'</div>';
-         document.getElementById('modal').innerHTML = modal;
-     };
-
+          
+          for (i=0; i<content.length; i++){ 
+          content[i].style.filter="blur(5px)";
+      }
+      };
 };
+
 
 //Закрыть модальное окно
 
@@ -87,4 +91,14 @@ var close = document.getElementById('close');
 
 close.onclick = function() {
      openModal.style.display="none";
+     for (i=0; i<content.length; i++){ 
+          content[i].style.filter="none";
+      }
+};
+
+
+function getBlur(){
+for (i=0; i<content.length; i++){ 
+          content[i].style.filter="blur(5px)";
+      }
 };
