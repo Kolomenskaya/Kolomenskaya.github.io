@@ -434,18 +434,16 @@ a {
 @media (max-width: 700px) {
 
 	* {
-		font-weight: 700;
-		
+		font-weight: 700;	
 	}
 
 	#out {
 		grid-template-columns: repeat(1, 1fr);
-		grid-gap: 1.5%;
+		grid-gap: 1%;
 	}
 
 	.about p {
     	display: none;
-
 	}
 
 	.pet-description p {
@@ -468,7 +466,6 @@ a {
 	}
 	    
 	.pet {
-		/*margin: 4%;*/
 		border-radius: 0px;
 	}
 
@@ -482,14 +479,12 @@ a {
 		text-transform: uppercase ;
 		font-size: 1.65em;
 		margin-left: -1%;
-
 	}
 
 	h1 {
-	display: none;
+		display: none;
 	}
 
-	
 	.about img {
 	 	max-width: 100%; 
 	 	grid-column: 1/3;
@@ -504,7 +499,6 @@ a {
 
 	.filter-bar {
 	    justify-content: center;
-	  
 	    margin: 4% 0% 2% 0%;
 	}
 
@@ -525,8 +519,16 @@ a {
 		width: 100%;
 		border-radius: 0%;
 	}
+	.more {
+		margin-top: 30%;
+	}
+
 	.morebutton {
 		display: none;
+	}
+
+	footer {
+		margin-top: 0;
 	}
 }
 
