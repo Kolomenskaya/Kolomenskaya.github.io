@@ -446,6 +446,11 @@ a {
     	display: none;
 	}
 
+	.mobile-about {
+		display: flex;
+		align-items: center;
+	}
+
 	.pet-description p {
 		display: none;
 	}
@@ -502,9 +507,7 @@ a {
 	}
 
 	.abouttext {
-		/*grid-column: 3/7;*/
 		width: 70%;
-		margin-top: 7%;
 	}
 
 	.aboutbuttons {
