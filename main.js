@@ -97,8 +97,6 @@ close.onclick = function() {
 };
 
 
-//Blur фона при открытом модальном окне
-
 function getBlur(){
 for (i=0; i<content.length; i++){ 
           content[i].style.filter="blur(5px)";
