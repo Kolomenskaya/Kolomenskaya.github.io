@@ -439,7 +439,8 @@ a {
 
 	#out {
 		grid-template-columns: repeat(1, 1fr);
-		grid-gap: 3%;
+		grid-row-gap: 3%;
+		grid-column-gap: 3%;
 	}
 
 	.about p {
